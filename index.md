@@ -5,7 +5,7 @@ title: Home
 
 # 2M2 Data Services, LLC
 
-We build and operate digital assets and develop the internal analytics and automation that support their operation, measurement, and improvement.
+2M2 Data Services builds and operates digital assets as well as internal analytics and automation tools and services that support the operation, measurement, and improvement of our digital assets.
 
 ## Overview
 
@@ -13,10 +13,10 @@ We build and operate digital assets and develop the internal analytics and autom
 
 ## What We Do
 
-- Operate and manage digital properties as long-term assets  
-- Build internal analytics and automation to support operations  
-- Maintain web infrastructure and data workflows  
-- Evaluate and develop new digital opportunities  
+- We operate and manage digital properties as long-term assets  
+- We build internal analytics and automation to support operations  
+- We maintain web infrastructure and data workflows  
+- We evaluate and develop new digital opportunities  
 
 ### Mailing Address
 
