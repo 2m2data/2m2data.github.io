@@ -29,6 +29,6 @@ We may update these terms from time to time by posting an updated version on thi
 
 ## Contact
 
-Questions: **info@2m2data.com**
+Questions: **[info@2m2data.com](mailto:info@2m2data.com)**
 
 **Last updated:** {{ site.time | date: "%B %d, %Y" }}
