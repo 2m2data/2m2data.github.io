@@ -1,1 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
+  <link rel="icon" href="/assets/images/2m2-logo-eye-only.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/">
+      <img class="brand-mark" src="/assets/images/2m2-logo-eye-only.png" alt="2M2 logo">
+      <span class="brand-name">2M2 Data Services, LLC</span>
+    </a>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/what-we-do/">What We Do</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
 
+<main class="container">
+{{ content }}
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>© {{ site.time | date: "%Y" }} 2M2 Data Services, LLC</div>
+    <div>
+      <a href="/privacy/">Privacy Policy</a> |
+      <a href="/terms/">Terms of Use</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
