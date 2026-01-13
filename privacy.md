@@ -34,6 +34,6 @@ You may contact us to request access to or deletion of personal information you 
 
 ## Contact
 
-Questions about this policy: **[info@2m2data.com](mailto:info@2m2data.com)**
+Questions about this policy: [info@2m2data.com](mailto:info@2m2data.com)
 
 **Last updated:** {{ site.time | date: "%B %d, %Y" }}
