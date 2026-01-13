@@ -5,7 +5,7 @@ title: Contact
 
 # Contact
 
-For business inquiries, email: **info@2m2data.com**
+For business inquiries, email: **[info@2m2data.com](mailto:info@2m2data.com)**
 
 ## Mailing Address
 
