@@ -1,34 +1,231 @@
+/* ===== Base / Reset ===== */
+
+:root {
+  --bg: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #e5e7eb;
+  --link: #0b5bd3;
+  --radius: 14px;
+  --maxw: 960px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
   margin: 0;
-  color: #0f172a;
-  background: #ffffff;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.55;
 }
+
+/* ===== Layout ===== */
+
 .container {
-  max-width: 960px;
+  max-width: var(--maxw);
   margin: 0 auto;
   padding: 24px;
 }
-.site-header, .site-footer {
-  border-bottom: 1px solid #e5e7eb;
+
+main.container {
+  padding-top: 32px;
+  padding-bottom: 48px;
 }
-.site-footer {
-  border-top: 1px solid #e5e7eb;
+
+/* ===== Header ===== */
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: #ffffff;
 }
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
 .brand {
   display: flex;
   align-items: center;
   gap: 10px;
   text-decoration: none;
   color: inherit;
+  font-weight: 600;
 }
+
 .brand-mark {
   width: 32px;
+  height: 32px;
+  display: block;
 }
+
 .nav a {
   margin-left: 16px;
   text-decoration: none;
-  color: #475569;
+  color: var(--muted);
+  font-weight: 500;
 }
-h1 { font-size: 32px; }
-h2 { margin-top: 24px; }
+
+.nav a:hover {
+  color: var(--text);
+}
+
+/* ===== Footer ===== */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.site-footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.site-footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+/* ===== Typography ===== */
+
+h1 {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 22px;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-top: 22px;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 14px;
+  padding-left: 20px;
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Components ===== */
+
+.lede {
+  font-size: 18px;
+  color: var(--muted);
+  max-width: 72ch;
+}
+
+/* Cards */
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 18px;
+  background: #ffffff;
+}
+
+/* Badges */
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.badge {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 13px;
+  color: var(--muted);
+  background: #ffffff;
+}
+
+/* Call to Action */
+
+.cta {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.cta:hover {
+  border-color: #cbd5e1;
+  text-decoration: none;
+}
+
+/* ===== Grid Layout ===== */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .col-7,
+  .col-5 {
+    grid-column: span 1;
+  }
+
+  .nav a {
+    margin-left: 12px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
