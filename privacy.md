@@ -10,7 +10,7 @@ title: Privacy Policy
 ## Information we collect
 
 - **Information you provide:** If you contact us by email, we may receive your name, email address, and the contents of your message.
-- **Website usage data:** Like many websites, we may collect basic technical and usage information (such as IP address, browser type, and pages visited) to help operate and improve the site.
+- **Website usage data:** We may collect basic technical and usage information (such as IP address, browser type, and pages visited) to help operate and improve the site.
 
 ## How we use information
 
@@ -34,6 +34,6 @@ You may contact us to request access to or deletion of personal information you 
 
 ## Contact
 
-Questions about this policy: **info@2m2data.com**
+Questions about this policy: **[info@2m2data.com](mailto:info@2m2data.com)**
 
 **Last updated:** {{ site.time | date: "%B %d, %Y" }}
